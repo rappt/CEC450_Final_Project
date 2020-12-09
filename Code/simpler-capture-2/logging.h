@@ -1,18 +1,11 @@
-
 #ifndef LOGGING_BG
 #define LOGGING_BG
-
-
-// 
-#include "util.h"
-
-
-// Defines section
+#include <string>
 #define PROJECT_TAG "BGRTR_RT_Final"
+extern bool USE_PRINTF;
 
+using namespace std;
 
-// Functions for logging specific information
-void log(char * thingToLog, int32 logLevel);
-void log(char * thingToLog);
-
-#endif // LOGGING_BG
+void log(string thingToLog, int logLevel);
+void log(string thingToLog);
+#endif
